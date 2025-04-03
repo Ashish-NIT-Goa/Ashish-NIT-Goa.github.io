@@ -1,0 +1,110 @@
+import React, { useState } from "react";
+import "./GetInTouch.css";
+
+const GetInTouch = () => {
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setFormSubmitted(true);
+    setName("");
+    setEmail("");
+    setMessage("");
+    const form = event.target;
+    const formData = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        console.log(xhr.response);
+      } else {
+        console.log("Error submitting form:", xhr.response);
+      }
+    };
+    xhr.send(formData);
+  };
+
+  return (
+    <section className="padding" id="get-in-touch">
+      <h2 style={{ textAlign: "center" }}>Get in touch</h2>
+      <div class="elementor-widget-container"><p>Interested in working together? I’d love to hear from you.&nbsp;</p></div>
+      {formSubmitted ? (
+        <div className="form-group">
+        <form className="form-container" action="https://formspree.io/f/xwpvbyan" method="POST" onSubmit={handleSubmit}>
+          <div className="form-row">
+            <label htmlFor="name" className="form-label">
+              Name <span className="form-required">*</span>
+            </label>
+          </div>
+          <div className="form-row-input">
+            <input type="text" id="name" name="name" autoComplete="given-name" value={name} onChange={(event) => setName(event.target.value)} className="form-input" required />
+          </div>
+          <div className="form-row">
+            <label htmlFor="email" className="form-label">
+              Email Address <span className="form-required">*</span>
+            </label>
+          </div>
+          <div className="form-row-input">
+            <input type="email" id="email" name="email" autoComplete="email" value={email} onChange={(event) => setEmail(event.target.value)} className="form-input" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" />
+          </div>
+          <div className="form-row">
+            <label htmlFor="message" className="form-label">
+              Message <span className="form-required">*</span>
+            </label>
+          </div>
+          <div className="form-row-input">
+            <textarea id="message" name="message" rows="5" value={message} onChange={(event) => setMessage(event.target.value)} className="form-textarea" required></textarea>
+          </div>
+          <button type="submit" className="form-submit">
+            SEND
+          </button>
+          <input type="hidden" name="_captcha" value="false" />
+          <div>
+            <p style={{ textAlign: "center", color: "green" }}>Your submission was successful.</p>
+          </div>
+        </form>
+      </div>
+      ) : (
+        <div className="form-group">
+          <form className="form-container" action="https://formspree.io/f/xwpvbyan" method="post" onSubmit={handleSubmit}>
+            <div className="form-row">
+              <label htmlFor="name" className="form-label">
+                Name <span className="form-required">*</span>
+              </label>
+            </div>
+            <div className="form-row-input">
+              <input type="text" id="name" name="name" autoComplete="given-name" value={name} onChange={(event) => setName(event.target.value)} className="form-input" required />
+            </div>
+            <div className="form-row">
+              <label htmlFor="email" className="form-label">
+                Email Address <span className="form-required">*</span>
+              </label>
+            </div>
+            <div className="form-row-input">
+              <input type="email" id="email" name="email" autoComplete="email" value={email} onChange={(event) => setEmail(event.target.value)} className="form-input" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+            </div>
+            <div className="form-row">
+              <label htmlFor="message" className="form-label">
+                Message <span className="form-required">*</span>
+              </label>
+            </div>
+            <div className="form-row-input">
+              <textarea id="message" name="message" rows="5" value={message} onChange={(event) => setMessage(event.target.value)} className="form-textarea" required></textarea>
+            </div>
+            <button type="submit" className="form-submit">
+              SEND
+            </button>
+            <input type="hidden" name="_captcha" value="false" />
+          </form>
+        </div>
+      )}
+    </section>
+  );
+};
+
+export default GetInTouch;
