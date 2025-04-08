@@ -26,19 +26,19 @@ const imageAltText = "white keyboard along with a notebook";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a student at the National Institute of Technology Goa. I have a strong passion for learning and constantly seeking new knowledge. As a self-taught Data Analyst, I am fascinated by the power of data and its potential to drive meaningful insights.";
+  "I’m passionate about harnessing Generative AI and Computer Vision to create intelligent tools that see, understand, and generate. I thrive on experimenting with language and vision models, automating workflows, and bringing ideas to life through quick prototypes. Always curious, always building, and always embracing new learning opportunities!";
 
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
 const skillsList = [
-  "Data Analysis",
-  "Data Visualization",
-  "Exploratory Data Analysis",
-  "PostgreSQL",
-  "Python",
-  "Microsoft Excel"
+  "🚀 Hackathons fuel my creativity",
+  "🛠️ Automating with web scraping",
+  "🔍 Exploring real-world datasets",
+  "💡 Turning data into insights",
+  "🧠 Building with LLMs & GenAI",
+  "🎓 Always learning & sharing",
 ];
 
 /**
@@ -47,7 +47,7 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "In addition to my studies, I have gained practical experience as a freelancer, specializing in web scraping. This allowed me to hone my skills in data extraction and manipulation, working with various web technologies to gather valuable information.";
+  "Outside of academics, I’ve worked as a freelancer, building custom web scrapers and automations for real-world use cases. It taught me how to move fast, solve practical problems, and pick up new tools on the go — skills I now carry into everything I build with AI.";
 
 const About = () => {
   return (
