@@ -29,7 +29,7 @@ import landscapeImage from "../../images/blood-ffffff-bg.webp";
 const imageAltText = "Red background";
 
 const downloadCV = () => {
-  window.open("https://resume.ashishs.tech/", "_blank");
+  window.open("https://resume.ashishs.me", "_blank");
 };
 
 const Home = ({ name, title }) => {
