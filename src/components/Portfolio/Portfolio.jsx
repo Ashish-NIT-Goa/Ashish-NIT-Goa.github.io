@@ -58,13 +58,6 @@ const projectList = [
     image: image_ted,
   },
   {
-    title: "Valorant Sprays as Stickers",
-    description:
-      "A unique WhatsApp sticker app that brings the vibrant world of Valorant to your conversations!",
-    url: "https://github.com/45H15H/WhatsApp_Sticker_App",
-    image: image_valorant,
-  },
-  {
     title: "Nutrilytics",
     description: "A web app that helps you get detailed nutritional analysis in seconds.",
     url: "https://nutrilytics.onrender.com/",
@@ -81,6 +74,18 @@ const projectList = [
     description: "A simple web app that generates meeting minutes using OpenAI's GPT-3 and TTS API.",
     url: "https://meeting-minutes-v1.streamlit.app/",
     image: image_mm,
+  },
+  {
+    title: "LinkedIn Profile Picture Analyzer",
+    description: "A simple web app that analyzes your LinkedIn profile picture using Google's Gemini.",
+    url: "https://linkedin-profile-picture-analyzer.streamlit.app/",
+    image: image_lppa,
+  },
+  {
+    title: "Soppy-Mails",
+    description: "A RPA project that automates customer feedback management using Datamatics tools.",
+    url: "https://github.com/45H15H/Datamatics-Hackathon",
+    image: datamatics,
   },
   {
     title: "Doja Cat Lyrics Dataset",
@@ -102,12 +107,6 @@ const projectList = [
     image: image_face,
   },
   {
-    title: "LinkedIn Profile Picture Analyzer",
-    description: "A simple web app that analyzes your LinkedIn profile picture using Google's Gemini.",
-    url: "https://linkedin-profile-picture-analyzer.streamlit.app/",
-    image: image_lppa,
-  },
-  {
     title: "Face Recognition",
     description: "A face recognition app that recognizes faces in images.",
     url: "https://github.com/45H15H/face-recognition",
@@ -126,16 +125,17 @@ const projectList = [
     image: piano_tiles,
   },
   {
+    title: "Valorant Sprays as Stickers",
+    description:
+      "A unique WhatsApp sticker app that brings the vibrant world of Valorant to your conversations!",
+    url: "https://github.com/45H15H/WhatsApp_Sticker_App",
+    image: image_valorant,
+  },
+  {
     title: "Mini Project",
     description: "Automated monkeytype game using PyAutoGUI and Browser Automation.",
     url: "https://github.com/45H15H/GUI-Automation/tree/main/monkeytype",
     image: monkeytype,
-  },
-  {
-    title: "Soppy-Mails",
-    description: "A RPA project that automates customer feedback management using Datamatics tools.",
-    url: "https://github.com/45H15H/Datamatics-Hackathon",
-    image: datamatics,
   },
   {
     title: "Mini Project",
