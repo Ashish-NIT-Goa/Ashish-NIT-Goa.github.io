@@ -60,13 +60,13 @@ const projectList = [
   {
     title: "Nutrilytics",
     description: "A web app that helps you get detailed nutritional analysis in seconds.",
-    url: "https://nutrilytics.onrender.com/",
+    url: "https://nutrilytics.ashishs.me",
     image: nutrilytics,
   },
   {
     title: "Immersive History",
     description: "Step into the past and explore captivating historical stories through interactive mediums.",
-    url: "https://immersive-history.onrender.com/",
+    url: "https://history.ashishs.me",
     image: history,
   },
   {
