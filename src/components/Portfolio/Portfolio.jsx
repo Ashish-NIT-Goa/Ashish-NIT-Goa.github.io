@@ -42,6 +42,7 @@ import nutrilytics from "../../images/projects/nutrition.jpg";
 import datamatics from "../../images/projects/datamatics.png";
 import invisibility_cloak from "../../images/projects/invisibility_cloak.png";
 import history from "../../images/projects/history.jpg";
+import vehicle from "../../images/projects/vehicle.jpg";
 
 /**
  * Project list
@@ -60,13 +61,13 @@ const projectList = [
   {
     title: "Nutrilytics",
     description: "A web app that helps you get detailed nutritional analysis in seconds.",
-    url: "https://nutrilytics.ashishs.me",
+    url: "https://nutrilytics.ashishs.codes",
     image: nutrilytics,
   },
   {
     title: "Immersive History",
     description: "Step into the past and explore captivating historical stories through interactive mediums.",
-    url: "https://history.ashishs.me",
+    url: "https://history.ashishs.codes",
     image: history,
   },
   {
@@ -86,6 +87,12 @@ const projectList = [
     description: "A RPA project that automates customer feedback management using Datamatics tools.",
     url: "https://github.com/45H15H/Datamatics-Hackathon",
     image: datamatics,
+  },
+  {
+    title: "RoadIntel",
+    description: "A real-time AI system for vehicle detection, tracking, and semantic analysis using YOLO and Gemini.",
+    url: "https://github.com/45H15H/roadIntel",
+    image: vehicle,
   },
   {
     title: "Doja Cat Lyrics Dataset",
