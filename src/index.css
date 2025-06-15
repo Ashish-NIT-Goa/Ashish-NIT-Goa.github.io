@@ -340,6 +340,12 @@ img.socialIcon {
   transition: opacity 1s ease;
 }
 
+.spinner {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
 .spinner-box {
   position: absolute;
   display: flex;
